@@ -1,0 +1,12 @@
+.chat-page {
+  display: flex;
+  justify-content: space-between;
+  background-color: #dcf2f5;
+  width: 100%;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.chat-list {
+  border: 1px solid #cac7c7;
+}/*# sourceMappingURL=style.css.map */

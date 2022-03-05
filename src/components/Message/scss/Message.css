@@ -1,0 +1,27 @@
+.title {
+  color: #61dafb;
+}
+
+.message-content span {
+  color: #61dafb;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  width: 400px;
+}
+
+input {
+  border-radius: 40px;
+  height: 40px;
+  padding: 0 11px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: #61dafb;
+  outline: none;
+}/*# sourceMappingURL=Message.css.map */

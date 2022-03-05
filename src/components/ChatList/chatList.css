@@ -1,0 +1,11 @@
+.chat-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(220, 242, 245);
+    width: 40%;
+    overflow-y: auto;
+    padding-bottom: 15px;
+    height: 70vh;
+    color : red
+}
