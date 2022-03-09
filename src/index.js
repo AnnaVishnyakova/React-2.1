@@ -4,23 +4,19 @@ import './index.css'
 import {
 	BrowserRouter,
 } from 'react-router-dom'
-import { store } from '../src/store'
+import { persistor,store } from '../src/store'
 import { Provider } from 'react-redux'
 import { Router } from './components/Router/index.js'
+import { PersistGate } from 'redux-persist/integration/react'
 
-// const theme = createTheme({
-// 	palette: {
-// 		primary: {
-// 			main: '#61dafb',
-// 		},
-// 	},
-// })
 
 ReactDOM.render(
 	
 		<BrowserRouter>
 		<Provider store={store}>
+			<PersistGate persistor={persistor}>
 			<Router />
+			</PersistGate>
 		</Provider>
 		</BrowserRouter>,
 	

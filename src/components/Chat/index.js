@@ -5,7 +5,7 @@ import { MessageList } from '../MessageList/index.js'
 import { Form } from '../Form/Form'
 import { AUTHORS } from '../../utils/constants'
 import { selectMessages } from '../../store/messages/selectors'
-import { addMessage } from '../../store/messages/actions'
+import { addMessage, addMessageWithThunk } from '../../store/messages/actions'
 import '../../App.css'
 
 export function Chat() {
@@ -27,21 +27,22 @@ export function Chat() {
 			author,
 			id: `msg-${Date.now()}`,
 		}
-		dispatch(addMessage(chatId, newMsg))
+		dispatch(addMessageWithThunk(chatId, newMsg))
 	}
 
 	useEffect(() => {
-		messagesEnd.current?.scrollIntoView()
+		messagesEnd.current?.scrollIntoView();
 
-		let timeout
-		if (
-			messages[chatId]?.[messages[chatId]?.length - 1]?.author === AUTHORS.USER
-		) {
-			timeout = setTimeout(() => {
-				sendMessage('Сообщение отправлено', AUTHORS.BOT)
-			}, 1000)
-		}
-		return () => clearTimeout(timeout)
+
+		// let timeout
+		// if (
+		// 	messages[chatId]?.[messages[chatId]?.length - 1]?.author === AUTHORS.USER
+		// ) {
+		// 	timeout = setTimeout(() => {
+		// 		sendMessage('Сообщение отправлено', AUTHORS.BOT)
+		// 	}, 1000)
+		// }
+		// return () => clearTimeout(timeout)
 	}, [messages])
 
 	if (!messages[chatId]) {
