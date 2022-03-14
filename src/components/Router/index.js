@@ -7,6 +7,9 @@ import { NotFoundPage } from '../../pages/NotFoundPage.js'
 import './Router.scss'
 import { Layout } from '../Layout'
 import { ChatPage } from '../../pages/ChatPage'
+import { Articles } from '../Article/Articles'
+
+
 
 export const Router = () => {
 		return (
@@ -15,6 +18,7 @@ export const Router = () => {
 				<Routes>
 					<Route path='' element={<Layout />} >
 					 <Route index element={<HomePage />}/>
+					 <Route path = 'articles' element={<Articles />}/>
 					
 					<Route path = "chats" element = {<ChatPage />} >
 						<Route Route index element = {<span> Please select a chat </span>}/>

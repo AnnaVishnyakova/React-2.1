@@ -12,6 +12,9 @@ export const Layout =()=>{
 					<NavLink to='/' className='link'>
 						Home
 					</NavLink>
+					<NavLink to = '/articles' className = 'link' >
+						Articles
+					</NavLink>
 					<NavLink to='/chats' className='link'>
 						Chats
 					</NavLink>

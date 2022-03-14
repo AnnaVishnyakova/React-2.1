@@ -33,16 +33,6 @@ export function Chat() {
 	useEffect(() => {
 		messagesEnd.current?.scrollIntoView();
 
-
-		// let timeout
-		// if (
-		// 	messages[chatId]?.[messages[chatId]?.length - 1]?.author === AUTHORS.USER
-		// ) {
-		// 	timeout = setTimeout(() => {
-		// 		sendMessage('Сообщение отправлено', AUTHORS.BOT)
-		// 	}, 1000)
-		// }
-		// return () => clearTimeout(timeout)
 	}, [messages])
 
 	if (!messages[chatId]) {
