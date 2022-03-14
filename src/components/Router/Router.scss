@@ -1,0 +1,26 @@
+.App_wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+    margin-top: 30px;
+    // display: flex;
+}
+
+.Navigate {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0 20px 0;
+    background-color: #fff;
+}
+
+.link {
+    color: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+h2 {
+    text-align: center;
+}
