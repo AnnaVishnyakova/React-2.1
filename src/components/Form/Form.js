@@ -30,8 +30,8 @@ export const Form = ({ onSubmit }) => {
 				onChange={handleChange}
 				inputRef={messageFocus}
 			/>
-			<Button Button type = 'submit' variant = "outlined">
-				Send
+			<Button button='submit' variant ="outlined">
+				Send 
 			</Button>
 		</form>
 	)
