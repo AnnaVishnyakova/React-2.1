@@ -1,7 +1,7 @@
 import {
 	TOGGLE_SHOW_NAME,
 	SET_NAME
-} from './actions.js'
+} from './actions'
 
 const initialState = {
 	showName: false,
